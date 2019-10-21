@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-7">
+      <app-recipe-list (selectedRecipe) = "onSelectedRecipe($event)"></app-recipe-list>
+
+  </div>
+
+  <!-- <div class="col-md-5">
+      <app-recipe-details *ngIf="detailRecipe != null" [recipe] = "detailRecipe"></app-recipe-details>
+  </div> -->
+
+   <div class="col-md-5">
+  <router-outlet></router-outlet>
+</div>
+</div>
